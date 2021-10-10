@@ -1,0 +1,14 @@
+selector{ font-family: sans-serif;}
+
+h1, h2{color:teal;
+    letter-spacing: 1em;
+}
+
+h1{font-size: 270%;}
+h2{font-size: 200%;}
+
+th {
+    background-color: teal;
+    color: beige;
+}
+

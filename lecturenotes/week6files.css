@@ -1,0 +1,19 @@
+h1{color:teal;
+    letter-spacing: 1em;
+}
+p{
+    color:lightseagreen;
+    font-weight: bolder;
+}
+body{
+    color:steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h2{font-size: 400%;
+    /* this is a grouped selector, it will style both headings */
+}
+p a{
+    color:orange;
+    /*only styling links inside p tag*/
+}
+/* the steelblue only applies to h2 because p and h1 have their own colors*/
