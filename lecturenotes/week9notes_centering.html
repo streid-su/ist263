@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 100px;}
+        p{text-align: center;} /*this centers text items inside a container*/
+        .margincentering{
+            border:1px solid orange;
+            margin: 0 auto;/*this centers block level containers*/
+            width: 30%;
+        }
+        .flexboxcentering{
+            border: 1px solid purple;
+            display: flex;
+            justify-content: center;
+        }
+        .flexcenterednav{
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph of text that we will center</p>
+
+    <div class="margincentering"> <img src="pumpkin.jpg"> <br>HAPPY HALLOWEEN! GRRRRR</div>
+
+    <div class="flexboxcentering"> <img src="pumpkin.jpg"> <br>HAPPY HALLOWEEN! GRRRRR</div>
+
+
+    <div class="flexcenterednav">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </div>
+</body>
+</html>
