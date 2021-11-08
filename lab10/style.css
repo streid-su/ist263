@@ -3,3 +3,4 @@ nav a{color:#123c69; }
 a:hover{background-color: #bab2b5;}
 nav{padding: 10px;}
 nav {margin-bottom: 30px;}
+@media only screen and (min-width: 768px) {}
