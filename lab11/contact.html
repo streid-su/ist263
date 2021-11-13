@@ -9,21 +9,23 @@
         <!--makes the website load full size on modile devices must be in head -->
 
     <style>
-        .part1{float: left; background-color: beige;}
+        body{background-color: #F3ECE7;
+            color: #2A1506;}
+        .part1{float: left; background-color: #DCC7B8;}
         .clear{clear:both;}
 
-        .part3 {display: flex; background-color: beige; border-radius: 2em}
-        .article1{order: 2; background-color: beige}
-        .article2{order:1; background-color: beige ;}
+        .part3 {display: flex; background-color: #DCC7B8; border-radius: 2em}
+        .article1{order: 2; background-color: #DCC7B8}
+        .article2{order:1; background-color: #DCC7B8 ;}
 
     .container{
         display: flex;
-        background-color: beige;
+        background-color: #DCC7B8;
         margin-top: 20px;
         flex-wrap: wrap;
     }
     
-    .part1and2{background-color: beige;
+    .part1and2{background-color: #DCC7B8;
     
     }
     .part1{margin-right: 100px;}
@@ -36,19 +38,28 @@
         font-size: 20px;
         line-height: 30px;
         }
-        
+        #skip{
+            position: absolute; 
+            left: -999px;
+            background-color: lightblue;
+        }
+        #skip:focus{
+            left: 10px; 
+        }
     </style>
     
     <body>
+        <a id="skip" href="#maincontent"></a>
         <nav> 
-            <a href="index.html">Bio</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" tabindex="2">Bio</a>
+            <a href="skills.html" tabindex="3">Skills</a>
+            <a href="contact.html" tabindex="1">Contact</a>
         </nav>
         
         <div class="part1and2">
             <div>
         <div class="part1">
+            <a id="maincontent"></a>
         <h1>Contact</h1>
         <p>Syracuse University <br>900 South Crouse Ave<br>Syracuse, NY 13244</p>
 

@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <title>Skills</title>
         <style>
+            body{background-color: #F3ECE7;
+            color: #2A1506;}
             table, th, td {border: 1px solid black;}
             .skillcentering{
                 display:flex;
@@ -20,7 +22,7 @@
                 width: 75%;
                 justify-content: space-between;}
             .oskills{ display: flex;
-                background-color: #8B4513;
+                background-color: #C5A289;
                 border-radius: 20px;}
 
             .flexbox2{
@@ -31,7 +33,8 @@
             .row1{display: flex;
                 padding: 5px;}
             .oskills{display: flex;
-                padding: 5px;}
+                padding: 5px;
+            }
             /*.flexbox2 div{ flex: 2;} /* question 14, could this be the way? IDK*/
            
             h1 {
@@ -43,18 +46,27 @@
         line-height: 30px;
         }
 
+        #skip{
+            position: absolute; 
+            left: -999px;
+            background-color: lightblue;
+        }
+        #skip:focus{
+            left: 10px; 
+        }
         </style>
 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <a id="skip" href="#maincontent">Skip to content</a>
         
         <nav> 
-            <a href="index.html">Bio</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" tabindex="3">Bio</a>
+            <a href="skills.html" tabindex="1">Skills</a>
+            <a href="contact.html" tabindex="2">Contact</a>
         </nav>
-
+         <a id="maincontent"></a>
         
         <div class="skillcentering">
     
