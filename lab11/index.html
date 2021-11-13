@@ -17,18 +17,29 @@
         font-size: 20px;
         line-height: 30px;
         }
+
+        #skip{
+            position: absolute; 
+            left: -999px;
+            background-color: lightblue;
+        }
+        #skip:focus{
+            left: 10px; 
+        }
         </style>
         <title>Stephanie Reid - Bio</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <a id="skip" href="#maincontent">Skip to content</a>
 
     <div>
         <nav> 
-            <a href="index.html">Bio </a>
-            <a href="skills.html">Skills </a>
-            <a href="contact.html">Contact </a>
+            <a href="index.html" tabindex="1">Bio</a>
+            <a href="skills.html" tabindex="2">Skills</a>
+            <a href="contact.html" tabindex="3">Contact</a>
         </nav>
+        <a id="maincontent"></a>
     </div>
         <header><img src="../images/banner.png" class ="bphoto" alt="A banner with the quote 'Feeding Your with a new way of thinking will allow you to grow'"></header>
         <h1>Stephanie Reid's Biography</h1>
