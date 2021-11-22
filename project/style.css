@@ -1,0 +1,16 @@
+
+.navcentering{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    margin-bottom: 50px;
+    color:#865439; 
+    }
+
+.navcentering a:hover {
+    background-color: #ffcb9a;
+    }
+    body{
+        font-family: sans-serif;
+    background-color: #fefff3 ;
+    }
