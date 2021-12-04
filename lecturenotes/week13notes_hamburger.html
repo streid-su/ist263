@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Part 2</title>
+        <style>
+            #hamicon {display: none; width: 40px;}/* turn off the hamburger for all times - page is large */
+            nav a:hover {background-color: lightseagreen;}
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}/*turning on hamburger when page is small*/
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                    }
+            #navlinks{display: none;}
+            }
+        </style>
+
+        <script>
+            function TurnNavOnOff(){
+                /*if else statement checks a condition and does something is that condition exists*/
+
+                if (document.getElementById("navlinks").style.getPropertyValue("display")=='block'){
+                    document.getElementById("navlinks").style.display = "none";
+                }
+
+                else{
+                    document.getElementById("navlinks").style.display = "block";
+                }
+                /*checking to see if navlinks is displaying, if it is then turn it off. If it's not then turn it on*/
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--
+            HTML
+            1. add a hamburger image to the page - check
+            css-media query
+            2. show hamburger only when the screen is small (mobile view) - check
+            3. hide the stacked nav when the screen is small -
+            Javascript
+            4. turn on stacked nav when user clicks the hamburger - check
+            5. turn off stacked nav when user clicks hamburger again -
+        -->
+        <nav>
+            <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id=hamicon onclick="TurnNavOnOff();">
+        <div id="navlinks">
+            <a href="index.html">Home</a> <span>|</span> 
+            <a href="skills.html">Skills</a> <span>|</span> 
+            <a href="contact.html">Contact</a>
+        </div>
+        </nav>
+
+        
+       
+    </body>
+</html>
