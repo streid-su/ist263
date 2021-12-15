@@ -13,9 +13,11 @@
     <style>
       
   body {
-    font-family: monospace;
+    font-family:monospace;
     background-color: white;
     padding: 20px;
+    color: #865439;
+  
   
 }
 
@@ -39,10 +41,11 @@
 /* Add a card effect for articles */
 .card {
   background-color: #fcf6f2 ;
-  padding: 20px;
-  margin-top: 20px;
-  margin: 60px;
+  padding: 10px;
+  margin-top: 5px;
+  margin: 10px;
   color: #616157;
+  
 
 }
 
@@ -66,7 +69,9 @@
   background-color: #ffcb9a;
             }
 
-
+p{
+  font-size: 30px;
+}
 
 #skip{
   position: absolute; 
@@ -100,6 +105,48 @@ a {
   background-color: black;
   color: white;
 }
+
+  /*MEDIA QUERIES For phones*/
+
+@media only screen and (max-width: 500px){
+  .card,.self{
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 5px;
+  }}
+  @media only screen and (max-width: 500px){
+  .card{
+    padding: 20px;
+    margin-bottom: 20px;
+  }}
+
+  @media only screen and (max-width: 500px){
+  .header{
+    width: 100%;
+    padding: 20px;
+  }}
+
+    /*MEDIA QUERIES For tablets*/
+    @media only screen and (max-width: 800px){
+  .card,.self{
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 5px;
+  }}
+  @media only screen and (max-width: 800px){
+  .card{
+    padding: 20px;
+    margin-bottom: 20px;
+  }}
+
+  @media only screen and (max-width: 800px){
+  .header{
+    width: 100%;
+    padding: 20px;
+  }}
+
     </style>
 
   <script>
@@ -114,6 +161,7 @@ function myFunction() {
    element.classList.toggle("dark-mode");
 }
   </script>
+  
 </head>
 <body>
   <a id="skip" href="#maincontent">Skip to content</a>
@@ -121,7 +169,7 @@ function myFunction() {
   <button onclick="myFunction()">DARK MODE</button>
 
   <div class="header">
-    <h1>Mindfull Humans</h1>
+    <h1>Mindful Humans</h1>
   </div>
 
   <div class= navcentering>
@@ -177,7 +225,8 @@ function myFunction() {
           Meditation
         </p>
 
-        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+        <p>Meditation to me is perhaps one of the best ways to cultivate mindfulness. During stressful times, just taking 5-10 minutes out of your day can help uplift your overall mood. Meditation teaches you to stay in the present, take control of your emotions and set intensions for your day. Concentrating on you breath is one of the best forms of practicing mindfulness. Many times, the simple act of sitting and counting your breaths is all it takes to stop your over thining and dial you into the present.</p>
+        <p>The next time you find yourself overthinking, or your anxiety is out of control, sit up straight, close your eyes and focus on your breath. Pay attentin to your body in this moment. How does your body react to each inhale and exhale? After repeating this exercise just 5-10 times, you'd be surprised how much better you feel. This is just one of the ways in which I medidate. There are many other ways to do so. My favorite form of meditation is finding guided meditations for a specify theme or intention I want to set. If I feel myself taken over by negative thoughts. I go to youtude and find meditations for positive thinking. These practices is what helps my mind slow down racing thoughts, let go of negativity and calm both my mind and body </p>
         <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
       </div>
 

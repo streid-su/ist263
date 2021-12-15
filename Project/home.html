@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico.png">
+<title>Mindfull Humans</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -34,9 +35,7 @@
   .container {
     position: relative;
     width: 50%;
-    margin: 20px
-
-
+    
   }
   
   .image {
@@ -50,7 +49,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f2e8d9;
+    background-color: #fcf6f2;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -59,7 +58,7 @@
   
   .container:hover .overlay {
     width: 100%;
-    background-color: #f2e8d9;
+    background-color: #ffcb9a;
   }
   
   .text {
@@ -78,9 +77,11 @@
       text-align: center;
       background: #d2d2d2;
       margin-top: 20px;
+      color: #616157;
               }
   .imgtext{
-    display: flex;
+  display: flex;
+  border-radius: 15px;
   }
 
   .purpose {
@@ -104,7 +105,7 @@ hr {
   margin: auto;
   width: 40%;
   height: 2px;
-  background-color: #f2e8d9;
+  background-color: #fcf6f2;
   
 }
 ul { display: inline-block; text-align: left; }
@@ -112,7 +113,7 @@ ul { display: inline-block; text-align: left; }
 .list{
   text-align: center;
   font-size: 25px;
-  background-color: #f2e8d9;
+  background-color: #fcf6f2;
   padding: 50px;
   margin: 40px
 }
@@ -175,7 +176,8 @@ form {
 
 .contain{
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #fcf6f2;
+  color: #616157;
 }
 
 input[type=text], input[type=submit] {
@@ -200,6 +202,72 @@ input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 }
+
+
+/*MEDIA QUERIES For phones*/
+
+
+@media only screen and (max-width: 500px){
+  .imgtext, .purpose, .text, .footer{
+    display: block;
+    width: 100%;
+  }}
+
+  @media only screen and (max-width: 500px){
+  .purpose{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }}
+
+@media only screen and (max-width: 500px){
+  .story, .help, .rn, .list, .footer{
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+  }}
+  
+  @media only screen and (max-width: 500px){
+  .hubcentering{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+  }}
+
+  /*MEDIA QUERIES For tablets*/
+
+
+@media only screen and (max-width: 800px){
+  .imgtext, .purpose, .text, .footer{
+    display: block;
+    width: 100%;
+  }}
+
+  @media only screen and (max-width: 800px){
+  .purpose{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+  }}
+
+@media only screen and (max-width: 800px){
+  .story, .help, .rn, .list, .footer{
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+  }}
+  
+  @media only screen and (max-width: 800px){
+  .hubcentering{
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+  }}
+  
+  
+
   </style>
   <script>
     function myFunction() {
@@ -234,22 +302,22 @@ input[type=submit]:hover {
     </div>
 
     <div class="purpose">
-      <p class="center1">
-      WELCOME!
-      </p>
+      <h3 class="center1">
+      WELCOME!</h3>
       <hr>
-      <p class="bl"> I'm the blogger behind The Mindful Hub. I'm here to help you become more present and enjoy the small things in life. In my blogs I will discuss mental health, self-help tools and my personal experiences. </P>
+      <p class="bl">Feeling overwhelmed or trapped in a cycle of negative thoughts. You've come to the right place, my friend.</p>
+      <p class="bl"> I'm the blogger behind Mindful Humans. I'm here to help you become more present and enjoy the small things in your life. In my blog I will discuss mental health, self-help tools and my personal journey to practcing mindfulness. </P>
     </div>
 </div>
   
   <div class="center">
-    <p>My goal is to help you organize your thoughts, relax your mind and overcome your doubts so you can live a happy and healthy life</p>
+    <p>My goal is to help you  relax your mindorganize your thoughts, and develop self love so you can live a happy and healthy life. </p>
   </div>
 
   <div class="intro">
   
   <div class="list">
-      <p class="help"> I'm helps to help you... </p>
+      <h3 class="help"> I'm helps to help you... </h3>
       <hr>
       <ul style="list-style-type:square;">
         <li> Develop a healthy and positive mindset that gives you peace of mind and confidence to pursue your biggest goals</li> 
@@ -261,8 +329,9 @@ input[type=submit]:hover {
     </div>     
     
     <div class="story">
-      <p class="socials"> My Story</p>
+      <h3 class="socials"> My Story</h3>
       <hr>
+      <pr> I am a Senior at Syrcause University majoring in Information Technology and Management. My Journey to practicing mindfulness began my sophmore year. </pr>
       <p> Life can be very stressful sometimes. As a person who overthinks alot so many of my struggles are caused by the pressure I put upon myself. It can be very hard to get out of a negative thought cycle when anxiety is holding you back.</p>
     
         <p>I spent many years of my life holding myself back from doing what I truly wanted to do in life because I was letting life happen to me instead of for me. </p>
@@ -272,21 +341,23 @@ input[type=submit]:hover {
     </div>
 
     <div class="list">
-      <p class="help">Mindfulness Is...</p>
+      <h3 class="help">Mindfulness Is...</h3>
       <hr>
       <ul style="list-style-type:square;">
-      <li>Observing your life as it is happening </li>
-      <li> Accepting your current situation without judgement</li>
-      <li> Taking action based on what your feel in your heart rather than old habits or short term cenvenience</li>
+      <li>Observing your life as it is happening, being fully present and aware of where we are and what we're doing </li>
+      <li> A quality that every human being already poseseses</li>
+      <li> Involves acceptance, paying attention to our thoughts and feelings without judgement</li>
     </ul>
       <p></p>
     </div>
+
+
 
       <p class="rn">If you’re interested in making positive changes in your life and becoming my mindful, I have some resources to help you!</p>
     </div>
   
     <div class="socials">
-      <p>Social Media</p>
+      <h3>Social Media</h3>
       <hr>
 
       <div class="media">
@@ -311,7 +382,7 @@ input[type=submit]:hover {
         <p>Join my mailing list to receive updates on the latest blog posts and other things!</p>
       </div>
     
-      <div class="contain" style="background-color:white">
+      <div class="contain" >
         <input type="text" placeholder="Name" name="name" required>
         <input type="text" placeholder="Email address" name="mail" required>
         <label>

@@ -8,6 +8,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico.png">
 
 <style>
+  body{
+    color: #865439;
+  }
 .header {
   padding: 30px;
   font-size: 40px;
@@ -31,8 +34,9 @@
 .footer {
   padding: 20px;
   text-align: center;
-  background: #aaa;
+  background-color: #fcf6f2;
   margin-top: 20px;
+  color: #616157;
 }
 
 .centered {
@@ -73,7 +77,6 @@ ul {
 }
 .resources{
   display: flex;
-  
   text-align: center;
 }
 .resources2{
@@ -87,6 +90,7 @@ ul {
  margin: 30px;
  border: 3px solid #f1f1f1;
  color: #616157;
+ background-color:#fcf6f2;
 
 }
 
@@ -95,12 +99,14 @@ ul {
  margin: 30px;
  border: 3px solid #f1f1f1;
  color: #616157;
+ background-color:#fcf6f2;
 }
 .books{
   width: 50%;
   margin: 30px;
   border: 3px solid #f1f1f1;
   color: #616157;
+  background-color:#fcf6f2;
 
 }
 .tools{
@@ -108,6 +114,7 @@ ul {
   margin: 30px;
   border: 3px solid #f1f1f1;
   color: #616157;
+  background-color:#fcf6f2;
 }
 .tit{
   font-size: 40px;
@@ -127,12 +134,52 @@ hr {
   background-color: black;
   color: white;
 }
-@media screen and (max-width: 800px) {
-  .books, .tools, .journ, .podcasts{
-    width: 100;
-    padding: 0;
-  }
-  }
+
+/*MEDIA QUERIES For phones*/
+
+@media only screen and (max-width: 500px){
+  .resources,.resources2{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 0px;
+  }}
+
+@media only screen and (max-width: 500px){
+  .container, .hphoto{
+    width: 100%;
+    margin: 0 auto;
+  }}
+  
+  @media only screen and (max-width: 500px){
+  .podcasts, .books, .journ, .tools{
+    width: 100%;
+    margin: 0 auto;
+  }}
+
+   /*MEDIA QUERIES For tablets*/
+   @media only screen and (max-width: 800px){
+  .resources,.resources2{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    padding: 0px;
+  }}
+
+@media only screen and (max-width: 800px){
+  .container, .hphoto{
+    width: 100%;
+    margin: 0 auto;
+  }}
+  
+  @media only screen and (max-width: 800px){
+  .podcasts, .books, .journ, .tools{
+    width: 100%;
+    margin: 0 auto;
+  }}
+
 </style>
 <script>
   function myFunction() {
@@ -145,7 +192,7 @@ hr {
 <body>
   <button onclick="myFunction()">DARK MODE</button>
 <div class="header">
-        <h1>Mindfull Humans</h1>
+        <h1>Mindful Humans</h1>
 </div>
 
 <div class="navcentering">
@@ -272,6 +319,8 @@ hr {
     </div>
 
 </div>
+
+
 
 <p class="close">I hope you were able to use some of these resources to take better care of yourself</p>
 
