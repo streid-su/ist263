@@ -8,105 +8,329 @@
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 <style>
 
-.hubcentering{
- display: flex;
- justify-content: center;
- padding: 30px;
- font-size: 40px;
- color: #616157;
-
- font-family: monospace;
-        }
- .navcentering{
-     display: flex;
-     justify-content: space-around;
-     padding: 8px;
-     margin-bottom: 50px;
-     color:#865439; 
-     font-size: 19px;
-            }
-  .navcentering a:hover {
-    background-color: #ffcb9a;
-            }
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #ffcb9a;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  width: 100%;
-  background-color: #ffcb9a;
-}
-
-.text {
-  color: white;
+  .hubcentering{
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+   font-size: 40px;
+   color: #616157;
+   background-color: #fcf6f2 ;
+   font-family: monospace;
+   margin: 40px;
+          }
+  .navcentering{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #d2d2d2;
-    margin-top: 20px;
+  padding: 8px;
+  margin-bottom: 50px;
+  color:#865439; 
             }
-</style>
-</head>
-<body>
-    <div class="hubcentering">
-    <h1>The Mindful Hub</h1>
-</div>
+.navcentering a:hover {
+  background-color: #ffcb9a;
+            }
 
-<div class= "navcentering">
-<nav> 
-    <a href="home.html">Home </a>
-    <a href="blog.html">Blog </a>
-    <a href="resources.html">Resources </a>
-</nav>
-</div>
+  .container {
+    position: relative;
+    width: 50%;
+    margin: 20px
 
-<div class="container">
-  <img src="../images/homep.png" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Hi. My name is Stephanie Reid :)</div>
+
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f2e8d9;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+    background-color: #f2e8d9;
+  }
+  
+  .text {
+    color: #616157;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .footer {
+      padding: 20px;
+      text-align: center;
+      background: #d2d2d2;
+      margin-top: 20px;
+              }
+  .imgtext{
+    display: flex;
+  }
+
+  .purpose {
+  float: right;
+  width: 40%;
+  padding: 50px;
+  margin: 20px;
+  color: #616157;
+  }
+
+.center{
+  text-align: center;
+  padding: 50px;
+  font-size: 25px;
+}
+.center1{
+  text-align: center;
+  font-size: 40px;
+} 
+hr {
+  margin: auto;
+  width: 40%;
+  height: 2px;
+  background-color: #f2e8d9;
+  
+}
+ul { display: inline-block; text-align: left; }
+
+.list{
+  text-align: center;
+  font-size: 25px;
+  background-color: #f2e8d9;
+  padding: 50px;
+  margin: 40px
+}
+.help{
+  font-size: 44px;
+  color: #616157;
+}
+
+.socials{
+  text-align: center;
+  font-size: 44px;
+}
+
+.rn{text-align: center;
+  font-size: 25px;
+  padding: 40px;
+  
+}
+
+.story1{ 
+  text-align: center;
+}
+.story{
+  padding: 50px;
+  margin: 40px;
+  font-size: 25px;
+  text-align: center;
+}
+a {
+   text-decoration: none;
+}
+
+.bl{
+  font-size: 24px;
+  
+}
+li{
+  color: #616157;
+}
+
+.media{
+     border:1px;
+    display: flex ;
+    justify-content: center;
+    margin-bottom: 30px;}
+
+  .media{
+    display: flex;
+    padding: 5px;}
+  
+    .dark-mode {
+  background-color: black;
+  color: white;
+}
+/*subcribe form*/
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.contain{
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+  </style>
+  <script>
+    function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+  </script>
+
+  </head>
+  <body>
+
+    <button onclick="myFunction()">DARK MODE</button>
+
+      <div class="hubcentering">
+      <h1>Mindful Humans</h1>
   </div>
+  
+  <div class= "navcentering">
+    <nav> 
+        <a href="home.html">Home </a>
+        <a href="blog.html">Blog </a>
+        <a href="resources.html">Resources </a>
+    </nav>
+  </div>
+
+  <div class="imgtext">
+    <div class="container">
+      <img src="../images/homep.png" alt="Avatar" class="image" width="500">
+        <div class="overlay">
+          <div class="text">Hi. My name is Stephanie Reid :)</div>
+        </div>
+    </div>
+
+    <div class="purpose">
+      <p class="center1">
+      WELCOME!
+      </p>
+      <hr>
+      <p class="bl"> I'm the blogger behind The Mindful Hub. I'm here to help you become more present and enjoy the small things in life. In my blogs I will discuss mental health, self-help tools and my personal experiences. </P>
+    </div>
 </div>
-<div class="intro">
-    <p> "At vero et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil </p>
-            
-    <p>impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+  
+  <div class="center">
+    <p>My goal is to help you organize your thoughts, relax your mind and overcome your doubts so you can live a happy and healthy life</p>
   </div>
 
-  <div class="footer">
-    <footer>
-        <hr>
-        <p>&copy; 2021</p>
-        <p class="quote"> "Set peace of mind as your highest goal, and organize your life around it." - Brian Tracy</p>
-    </footer>
-  </div>
+  <div class="intro">
+  
+  <div class="list">
+      <p class="help"> I'm helps to help you... </p>
+      <hr>
+      <ul style="list-style-type:square;">
+        <li> Develop a healthy and positive mindset that gives you peace of mind and confidence to pursue your biggest goals</li> 
 
-</body>
-</html>
+        <li> Help you maintain a healthy relationship with yoursself by discussing the inportance of self love and various self-care practices that will help you take care of yourself to stress and anxiety. </li> 
+
+        <li>Learn the importance of giving gratitue for the small things in Life. </li> 
+      </ul>
+    </div>     
+    
+    <div class="story">
+      <p class="socials"> My Story</p>
+      <hr>
+      <p> Life can be very stressful sometimes. As a person who overthinks alot so many of my struggles are caused by the pressure I put upon myself. It can be very hard to get out of a negative thought cycle when anxiety is holding you back.</p>
+    
+        <p>I spent many years of my life holding myself back from doing what I truly wanted to do in life because I was letting life happen to me instead of for me. </p>
+        
+        <p>Eventually I decided it was time to make some changes and stop holding myself back. Through practicing Mindfulness in my daily life, I found ways to prioritize my mental well-being, decrease anxiety and regulate my emotions. </p>
+    
+    </div>
+
+    <div class="list">
+      <p class="help">Mindfulness Is...</p>
+      <hr>
+      <ul style="list-style-type:square;">
+      <li>Observing your life as it is happening </li>
+      <li> Accepting your current situation without judgement</li>
+      <li> Taking action based on what your feel in your heart rather than old habits or short term cenvenience</li>
+    </ul>
+      <p></p>
+    </div>
+
+      <p class="rn">If you’re interested in making positive changes in your life and becoming my mindful, I have some resources to help you!</p>
+    </div>
+  
+    <div class="socials">
+      <p>Social Media</p>
+      <hr>
+
+      <div class="media">
+        <a class="icon" href="https://twitter.com/stephxreid" target="_blank" >
+            <img src="../images/twittwe.png" alt="twitter" width="50">
+        </a>
+        <a class="icon" href="https://www.instagram.com/stephxreid/" target="_blank">
+            <img src="../images/instaicon.png" alt="instagram" width="40">
+        </a>
+        <a class="icon" href="mailto:streid@syr.edu" target="_blank">
+            <img src="../images/e.png" alt="email" width="50">
+        </a>
+    </div>
+
+  
+    </div>
+
+    <!-- Subscribe -->
+    <form action="mailto:streid@syr.edu" method="POST">
+      <div class="contain">
+        <h2>Subscribe </h2>
+        <p>Join my mailing list to receive updates on the latest blog posts and other things!</p>
+      </div>
+    
+      <div class="contain" style="background-color:white">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email address" name="mail" required>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+        </label>
+      </div>
+    
+      <div class="contain">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+
+    <div class="footer">
+      <footer>
+          <hr>
+          <p>&copy; 2021</p>
+          <p class="quote"> "Set peace of mind as your highest goal, and organize your life around it." - Brian Tracy</p>
+      </footer>
+    </div>
+  
+  </body>
+  </html>

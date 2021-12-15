@@ -8,10 +8,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico.png">
 
 <style>
-    .navcentering{
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: #616157;
+  background-color: #fcf6f2 ;
+  font-family: monospace;
+}
+.navcentering{
+  display: flex;
   justify-content: space-around;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   padding: 8px;
   margin-bottom: 50px;
   color:#865439; 
@@ -25,10 +34,120 @@
   background: #aaa;
   margin-top: 20px;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 50%;
+  padding: 40px;
+ 
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hphoto{
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 500px;
+  width: 1000px;
+}
+
+a {
+   text-decoration: none;
+}
+.fav{
+  font-size: 30px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+}
+.resources{
+  display: flex;
+  
+  text-align: center;
+}
+.resources2{
+  display: flex;
+  
+  text-align: center;
+}
+
+.podcasts {
+ width: 50%;
+ margin: 30px;
+ border: 3px solid #f1f1f1;
+ color: #616157;
+
+}
+
+.journ{
+ width: 50%;
+ margin: 30px;
+ border: 3px solid #f1f1f1;
+ color: #616157;
+}
+.books{
+  width: 50%;
+  margin: 30px;
+  border: 3px solid #f1f1f1;
+  color: #616157;
+
+}
+.tools{
+  width: 50%;
+  margin: 30px;
+  border: 3px solid #f1f1f1;
+  color: #616157;
+}
+.tit{
+  font-size: 40px;
+}
+hr {
+  margin: auto;
+  width: 40%;
+  height: 2px;
+  background-color: #f2e8d9;
+  
+}
+.close{
+  text-align: center;
+  font-size: 30px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .books, .tools, .journ, .podcasts{
+    width: 100;
+    padding: 0;
+  }
+  }
 </style>
+<script>
+  function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
     
 </head>
 <body>
+  <button onclick="myFunction()">DARK MODE</button>
+<div class="header">
+        <h1>Mindfull Humans</h1>
+</div>
+
 <div class="navcentering">
     <nav> 
         <a href="home.html">Home </a>
@@ -36,15 +155,125 @@
         <a href="resources.html">Resources </a>
     </nav>
 </div>
-    <h1>Resources</h1>
-    <header><img src="../images/meditate.png" class ="hphoto" alt="Home page photo" width="500"></header>
-    <p>Below you will find some helpful resources </p> <br>
 
-    <p>Lorem Ipsum</p>
+<div class="container">
+    <header><img src="../images/r2.png" class ="hphoto" alt="Home page photo" ></header>
 
-    <p>Lorem Ipsum</p>
+    <div class="centered">
+      <p class="fav">Favorite Resources</p>
+      <hr>
+      <p>Below are some of my top recommendations for books, podcasts, and products to uplevel your mind </p>
+    </div>
+</div>
+<div class="resources">
+    <div class="podcasts">
 
-    <p>Lorem Ipsum</p>
+      <p class="tit">Podcasts</p>
+      <hr>
+      <ul>
+        <li><a class="icon" href="https://open.spotify.com/show/3EjGwxzGvulEXLnJ4wj5dA" target="_blank" >
+          IN HINDZSIGHT
+      </a></li>
+      <li><a class="icon" href="https://open.spotify.com/show/5O5tlazpUSpflbc1jAY0ci" target="_blank" >
+        THE MINDFUL KIND
+    </a></li>
+    <li><a class="icon" href="https://open.spotify.com/show/1CfW319UkBMVhCXfei8huv" target="_blank" >
+      TEN PERCENT HAPPIER
+  </a></li>      
+  <li><a class="icon" href="https://open.spotify.com/search/MINDFULNESS%20MODE" target="_blank" >
+    MINDFULLNESS MODE
+</a></li>
+      </ul>
+    </div>
+
+    <div class="books">
+      <p class="tit">Books</p>
+      <hr>
+      <ul>
+        <li>
+          <a class="icon" href="https://www.amazon.com/Forgiving-What-You-Cant-Forget/dp/0718039874/ref=sr_1_22?crid=1SJCKLMG7JYWP&keywords=self+help+books+for+women&qid=1639531669&sprefix=SELF+HEL%2Caps%2C203&sr=8-22" target="_blank" >
+          FORGIVING WHAT YOU CAN'T FORGET
+          </a>
+      </li>
+      <li>
+        <a class="icon" href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=sr_1_35?crid=1SJCKLMG7JYWP&keywords=self+help+books+for+women&qid=1639531758&sprefix=SELF+HEL%2Caps%2C203&sr=8-35" target="_blank" >
+        ATOMIC HABITS
+        </a>
+    </li>
+    <li>
+      <a class="icon" href="https://www.amazon.com/gp/product/1878424319/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" target="_blank" >
+      THE FOUR AGREEMENTS
+      </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.amazon.com/Good-Vibes-Life-Self-Love-Unlocking/dp/1788171829/ref=sr_1_17?keywords=SELF+HELP&qid=1639532152&s=books&sr=1-17" target="_blank" >
+    GOOD VIBES, GOOD LIFE
+    </a>
+</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="resources2">
+    
+    <div class="journ">
+      <p class="tit">Journals/Planner</p>
+      <hr>
+      <ul>
+        <li>
+          <a class="icon" href="https://www.urbanoutfitters.com/shop/the-five-minute-journal-by-intelligent-change?inventoryCountry=US&color=000&size=ONE%20SIZE&utm_medium=affiliates&utm_source=LS&utm_campaign=rewardStyle&utm_term=594294&utm_content=11922546694&ranMID=43176&ranEAID=QFGLnEolOWg&ranSiteID=QFGLnEolOWg-_tz5yuWrgmhebkREa8UpzQ&type=REGULAR&quantity=1" target="_blank" >
+          THE FIVE MINUTE JOURNAL
+          </a>
+      </li>
+      <li>
+        <a class="icon" href="https://www.amazon.com/Zen-Journal-Practicing-Mindful-Giving/dp/1250147700/ref=sr_1_6?crid=2QQH2PTB0HQI&keywords=mindfulness+journal&qid=1639531393&sprefix=MINDFULNES%2Caps%2C184&sr=8-6#customerReviews" target="_blank" >
+        ZEN AS F*CK
+        </a>
+    </li>
+    <li>
+      <a class="icon" href="https://www.amazon.com/Mindfulness-Journal-Creative-Prompts-Release/dp/1647399289/ref=sr_1_1_sspa?crid=23I5NDHY3JHAE&keywords=mindfulness+coloring+book&qid=1639531520&sprefix=mindfulness+CO%2Caps%2C185&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySkhRUThITzRQSjk2JmVuY3J5cHRlZElkPUEwMTU1MDg2VlFDTEo2RVNPRjdUJmVuY3J5cHRlZEFkSWQ9QTAyMDE1MTQyQkNNOFNPUlk2VzVNJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank" >
+      THE MINDFULLNESS JOURNAL
+      </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.amazon.com/Year-Zen-52-Week-Guided-Journal/dp/1638788537/ref=sr_1_4_sspa?keywords=mindfulness+PLANNER&qid=1639531589&sr=8-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQ0hOOENaODhPUFJUJmVuY3J5cHRlZElkPUEwOTkwODQyMVo3RVNSTVZDSjRHRSZlbmNyeXB0ZWRBZElkPUEwNDYyNzU4MTVJNVpESVFYWENXUSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank" >
+    A YEAR OF ZEN
+    </a>
+</li>
+      </ul>
+    </div>
+
+    <div class="tools">
+
+      <p class="tit">Tools</p>
+      <hr>
+      <ul>
+        <li>
+            <a class="icon" href="https://www.headspace.com/" target="_blank" >
+            HEADSPACE
+            </a>
+        </li>
+        <li>
+          <a class="icon" href="https://www.youtube.com/c/yogawithadriene/videos" target="_blank" >
+          YOGA WITH ADRIENE
+          </a>
+      </li>
+      <li>
+        <a class="icon" href="https://www.betterhelp.com/helpme/?utm_source=AdWords&utm_medium=Search_PPC_c&utm_term=theraphy_e&utm_content=66907707582&network=g&placement=&target=&matchtype=e&utm_campaign=384672130&ad_type=text&adposition=&gclid=Cj0KCQiAnuGNBhCPARIsACbnLzo-KvFWYL28HUlY3XSF0KRaUk0NhmfsVHVDOkfR7N4CBTP_Mlh8s0oaAsoDEALw_wcB&not_found=1&gor=helpme" target="_blank" >
+        BETTERHELP
+        </a>
+    </li>
+    <li>
+      <a class="icon" href="https://www.calm.com/" target="_blank" >
+      CALM
+      </a>
+  </li>
+      </ul>
+    </div>
+
+</div>
+
+<p class="close">I hope you were able to use some of these resources to take better care of yourself</p>
 
     <div class="footer">
         <footer>
