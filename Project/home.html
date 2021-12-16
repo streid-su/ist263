@@ -73,12 +73,13 @@
     white-space: nowrap;
   }
   .footer {
-      padding: 20px;
-      text-align: center;
-      background: #d2d2d2;
-      margin-top: 20px;
-      color: #616157;
-              }
+  padding: 20px;
+  text-align: center;
+  background-color: #fcf6f2;
+  margin-top: 20px;
+  color: #616157;
+  font-size: 20px;
+}
   .imgtext{
   display: flex;
   border-radius: 15px;
@@ -235,6 +236,12 @@ input[type=submit]:hover {
     margin: 0 auto;
   }}
 
+  @media only screen and (max-width: 500px){
+  .image{
+    width: 100%;
+    margin: 0 auto;
+  }}
+
   /*MEDIA QUERIES For tablets*/
 
 
@@ -245,10 +252,10 @@ input[type=submit]:hover {
   }}
 
   @media only screen and (max-width: 800px){
-  .purpose{
+  .purpose, .image{
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0px;
   }}
 
 @media only screen and (max-width: 800px){
@@ -256,7 +263,7 @@ input[type=submit]:hover {
     letter-spacing: 2px;
     margin: 0 auto;
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }}
   
   @media only screen and (max-width: 800px){
@@ -265,7 +272,10 @@ input[type=submit]:hover {
     padding: 15px;
     margin: 0 auto;
   }}
-  
+  @media only screen and (max-width: 800px){
+  .footer{
+   margin: 15px;
+  }}
   
 
   </style>
