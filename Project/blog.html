@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico.png">
     <title>Blog</title>
+    <link rel="stylesheet" href="pstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -17,12 +18,23 @@
     background-color: white;
     padding: 20px;
     color: #865439;
-  
-  
 }
 
+.navcentering{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  margin-bottom: 50px;
+  color:#865439; 
+            }
+.navcentering a:hover {
+  background-color: #ffcb9a;
+            }
+
 /* Header/Blog Title */
-.header {
+.hubcentering {
   padding: 30px;
   font-size: 40px;
   text-align: center;
@@ -57,19 +69,6 @@
   color: #616157;
   font-size: 20px;
 }
-
-.navcentering{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-size: 20px;
-  padding: 8px;
-  margin-bottom: 50px;
-  color:#865439; 
-            }
-.navcentering a:hover {
-  background-color: #ffcb9a;
-            }
 
 p{
   font-size: 30px;
@@ -115,16 +114,18 @@ a {
     width: 100%;
     margin: 0 auto;
     letter-spacing: 2px;
-    padding: 5px;
+    padding: 15px;
+    
   }}
   @media only screen and (max-width: 500px){
   .card{
     padding: 20px;
     margin-bottom: 20px;
+  
   }}
 
   @media only screen and (max-width: 500px){
-  .header{
+  .hubcentering{
     width: 100%;
     padding: 20px;
   }}
@@ -144,7 +145,7 @@ a {
   }}
 
   @media only screen and (max-width: 800px){
-  .header{
+  .hubcentering{
     width: 100%;
     padding: 20px;
   }}
@@ -170,7 +171,7 @@ function myFunction() {
 
   <button onclick="myFunction()">DARK MODE</button>
 
-  <div class="header">
+  <div class="hubcentering">
     <h1>Mindful Humans</h1>
   </div>
 
@@ -178,12 +179,11 @@ function myFunction() {
     <nav> 
         <a href="home.html" tabindex="1">Home </a>
         <a href="blog.html" tabindex="2">Blog </a>
-        <a href="resources.html" tabindex="3">Resources </a>
+        <a href="resources.html"tabindex="3">Resources </a>
     </nav>
-
     <a id="maincontent"></a>
     </div>
-  
+
   <div>
     <div >
       <div class="card">
@@ -212,7 +212,7 @@ function myFunction() {
 
         <p> Do you know whats hard sometimes? Giving gratitue for the simple thing ins life<p>
 
-        </p>During difficult times, its very easy to feel a bit overwhelmed by life. Negative thoughts can creep in making it difficult to focus on the postives. However, simply givng gratitude can help to alleviate these negative feelings and give you a positive outlook on life. Gratitude is defined as a thankful appreciation for what you receive, whether tangible or intangible. It is a positive emotional reaction and appreciation for the meaningful things in our lives. Taking a few seconds out of your day to give gratitude for the things you have allows you to acknowledge the goodness in your live. It's very easy for us to focus on the things we do not have in life. Giving gratidtude daily will help have a more positive view on life, relish good experiences, improve your mental health, deal with adversity and build stronger relationships. </p>
+        <p>During difficult times, its very easy to feel a bit overwhelmed by life. Negative thoughts can creep in making it difficult to focus on the postives. However, simply givng gratitude can help to alleviate these negative feelings and give you a positive outlook on life. Gratitude is defined as a thankful appreciation for what you receive, whether tangible or intangible. It is a positive emotional reaction and appreciation for the meaningful things in our lives. Taking a few seconds out of your day to give gratitude for the things you have allows you to acknowledge the goodness in your live. It's very easy for us to focus on the things we do not have in life. Giving gratidtude daily will help have a more positive view on life, relish good experiences, improve your mental health, deal with adversity and build stronger relationships. </p>
 
         <p>From a young age, we are taught to thank others when they extend a nice gesture. We learn to say thank you automatically when given sometime. But, how many times do we extands thanks for the little things that happen to us daily.Many studeis have found that giving gratitude in your daily life can bring a variety of physical, psychological and socal benefits. It allows us to give appreciation towards all the positive elements of our lives and the people around us. While this may not be the care-all for everything we deal with, gratitude can help keep you grounded especially in times of uncertainty.Each day, think of five thing your thankful for, no matter how big or small, and write them down. Make it a daily habit to visualize what's good in your life. This can have a great impact on your mood throughout the day or even your sleep quality. </p>
         <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>

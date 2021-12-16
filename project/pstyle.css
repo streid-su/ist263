@@ -1,4 +1,5 @@
 .navcentering{
+  display: flex;
   justify-content: space-around;
   text-align: center;
   font-size: 20px;
@@ -12,6 +13,8 @@
  .footer {
   padding: 20px;
   text-align: center;
-  background: #d2d2d2;
+  background-color: #fcf6f2;
   margin-top: 20px;
-          }
+  color: #616157;
+  font-size: 20px;
+            }
